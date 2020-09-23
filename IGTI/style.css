@@ -1,0 +1,40 @@
+body {
+  padding: 10px;
+  font-family: monospace;
+}
+
+.container {
+  width: 408px;
+}
+
+.square {
+  width: 108px;
+  height: 108px;
+  border: 1px solid lightgray;
+}
+
+ul, li {
+  list-style: circle;
+}
+
+ul {
+  width: 258px;
+}
+
+li {
+  margin: 5px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.flex-collumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
