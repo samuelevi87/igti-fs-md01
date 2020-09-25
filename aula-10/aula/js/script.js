@@ -18,9 +18,9 @@ function withLet() {
   for (let i = 0; i < 10; i++) {
     console.log('let' + i);
   }
-
-  //i = 20;
-  //console.log(i);
+  
+  // console.log(i);
+  // i = 20;
 }
 
 withVar();
@@ -61,8 +61,8 @@ console.log(sum4(2, 3));
 
 // template literals
 
-const name = 'Raphael';
-const surName = 'Gomide';
+const name = 'Samuel Levi';
+const surName = 'Alves';
 const text1 = 'Meu nome é ' + name + ' ' + surName;
 const text2 = `Meu nome é ${name} ${surName}`;
 
