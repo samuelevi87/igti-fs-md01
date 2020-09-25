@@ -45,7 +45,15 @@ function render() {
   for (var i = 0; i < globalNames.length; i++) {
     var currentName = globalNames[i];
     var li = document.createElement('li');
-    li.textContent = currentName;
+    var button = document.createElement('button');
+    button.classList.add('deleteButton')
+    button.textContent = 'x';
+
+    var span = document.createElement('span');
+    span.textContent = currentName;
+
+    li.appendChild(button);
+    li.appendChild(span);
     ul.appendChild(li);
   }
     
