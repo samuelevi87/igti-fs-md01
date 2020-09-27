@@ -1,0 +1,33 @@
+.primaryTitle{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-align-top {
+  align-items: flex-start;
+}
+
+.input-field {
+  display: flex;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.sideBySide {
+  width: 50%;
+  border: 1px solid lemonchiffon;
+  margin-right: 15px;
+  border-radius: 5px;
+  padding: 5px;
+}
