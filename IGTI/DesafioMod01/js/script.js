@@ -1,8 +1,10 @@
 var searchName = null,
   searchButton = null,
-  sideUsers = null;
-sideStatistics = null;
-users = [];
+  sideUsers = null,
+  sideStatistics = null,
+  divWait = null,
+  divMod = null,
+  users = [];
 
 const numberFormat = Intl.NumberFormat('pt-BR');
 
@@ -17,6 +19,8 @@ function mapElements() {
   searchButton = document.querySelector('#searchButton');
   sideUsers = document.querySelector('#sideUsers');
   sideStatistics = document.querySelector('#sideStatistics');
+  divMod = document.querySelector('#divMod');
+  divWait = document.querySelector('#divWait');
 }
 
 async function fetchUsers() {
@@ -40,7 +44,14 @@ async function fetchUsers() {
       //retornando a lista em ordem alfabética
       return a.name.localeCompare(b.name);
     });
-  console.log(users);
+  showModification();
+}
+
+function showModification(){
+  setTimeout(() =>{
+    divWait.classList.add('hidden');
+    divMod.classList.remove('hidden');
+  }, 1500)
 }
 
 function addEvents() {

@@ -13,19 +13,30 @@
   <body>
     <div class="container">
       <h1 class="primaryTitle">Users Search</h1>
-      <div class="flex-row">
-        <div class="input-field">
-          <input
-          id="searchName"
-          type="text"
-          class="validate"
-          />
-          <label for="searchName">Search</label>
+      <div id="divWait" class="flex-row flex-center">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
         </div>
-        <button 
-        id="searchButton"
-        class="wavs-effect waves-light btn">Search</button>
+        <span style="margin-left: 15px; font-size: 1.4rem;">Loading...</span>
       </div>
+      <div id="divMod" class="hidden">
+        <div class="flex-row">
+          <div class="input-field">
+            <input id="searchName" type="text" class="validate" />
+            <label for="searchName">Search</label>
+          </div>
+          <button id="searchButton" class="wavs-effect waves-light btn">
+            Search
+          </button>
+        </div>
         <div class="flex-row flex-align-top">
           <div id="sideUsers" class="sideBySide"><h2>Filtered Users</h2></div>
           <div id="sideStatistics" class="sideBySide"><h2>Statistics</h2></div>

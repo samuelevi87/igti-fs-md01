@@ -18,6 +18,10 @@ h2 {
   align-items: flex-start;
 }
 
+.flex-center {
+  justify-content: center;
+}
+
 .input-field {
   display: flex;
   width: 100%;
@@ -43,6 +47,11 @@ h2 {
   margin: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   background-color: antiquewhite;
 }
+
